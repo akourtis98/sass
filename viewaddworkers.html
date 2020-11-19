@@ -77,56 +77,6 @@
             padding-top: 16px;
         }
 
-
-        .divTableHead {
-            border: 2px solid red !important
-        }
-
-        .divTableRow:nth-child(even) {
-            background-color: #D3D3D3;
-        }
-
-        .divTableCell {
-            padding: 10px;
-        }
-
-        .divTableCell {
-            width: 16.66%;
-            text-align: center;
-        }
-
-        div.content {
-            margin: auto;
-            width: 70vw;
-        }
-
-        ul.breadcrumb {
-            width: 70vw;
-            margin: auto;
-            padding: 10px 10px;
-            list-style: none;
-        }
-
-        ul.breadcrumb li {
-            display: inline;
-            font-size: 15px;
-        }
-
-        ul.breadcrumb li+li:before {
-            color: black;
-            content: "/\00a0";
-        }
-
-        ul.breadcrumb li a {
-            color: #0275d8;
-            text-decoration: none;
-        }
-
-        ul.breadcrumb li a:hover {
-            color: #01447e;
-            text-decoration: underline;
-        }
-
         table,
         th,
         td {
@@ -147,6 +97,11 @@
 
         td {
             text-align: center;
+        }
+
+        main {
+            width: 70vw;
+            margin: auto;
         }
 
         table {
@@ -171,10 +126,8 @@
 
     <br>
     <main>
-        <ul class="breadcrumb">
-            <li><a href="./dashboard.html">Home</a></li>
-            <li>View/Add Workers</li>
-        </ul>
+        <h3>View/Add Workers</h3>
+        <hr>
         <br>
         <div class="content" style="margin: auto;">
             <table>
@@ -224,7 +177,7 @@
             <hr>
             <form action="/action_page.php" method="post">
                 <div class="container">
-                    <h4>Add new worker:</h4>
+                    <h3>Add new worker</h3>
                     <label for="username"><b>Username:</b></label>
                     <input type="text" placeholder="Enter Username" name="username" required>
                     <br>

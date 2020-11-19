@@ -104,35 +104,14 @@
             width: 70vw;
         }
 
-        table {
-            width: 100%;
-        }
 
-        ul.breadcrumb {
+        main {
             width: 70vw;
             margin: auto;
-            padding: 10px 10px;
-            list-style: none;
         }
 
-        ul.breadcrumb li {
-            display: inline;
-            font-size: 15px;
-        }
-
-        ul.breadcrumb li+li:before {
-            color: black;
-            content: "/\00a0";
-        }
-
-        ul.breadcrumb li a {
-            color: #0275d8;
-            text-decoration: none;
-        }
-
-        ul.breadcrumb li a:hover {
-            color: #01447e;
-            text-decoration: underline;
+        table {
+            width: 100%;
         }
     </style>
 </head>
@@ -153,10 +132,8 @@
 
     <br>
     <main>
-        <ul class="breadcrumb">
-            <li><a href="./dashboard.html">Home</a></li>
-            <li>View/Add courses</li>
-        </ul>
+        <h3>View/Add Courses</h3>
+        <hr>
         <br>
         <div class="content" style="margin: auto;">
             <table>
@@ -190,7 +167,7 @@
             <div>
                 <form action="/action_page.php" method="post">
                     <div class="container">
-                        <h4>Add new course:</h4>
+                        <h3>Add new course:</h3>
                         <label for="coursename"><b>Course name</b></label>
                         <input type="text" placeholder="Enter Course name" name="coursename" required>
                         <label for="courseid"><b>Course ID</b></label>
