@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View/Add Courses | SASS </title>
+    <title>Book appointment | SASS </title>
     <link rel="icon" type="image/png" href="favicon.ico" />
     <link rel="stylesheet" href="./styles/main.css">
 
@@ -14,7 +14,6 @@
             cursor: pointer;
             width: 60px;
             border: 0px;
-            height: 25px;
         }
 
         .deletebtn:hover {
@@ -24,28 +23,10 @@
         }
 
 
-        .modifybtn {
-            transition: 0.2s ease-in-out;
-            cursor: pointer;
-            width: 60px;
-            border: 0px;
-            height: 25px;
-        }
-
         .modifybtn:hover {
             background-color: lightseagreen;
             color: white;
             border: 1px solid lightseagreen !important;
-        }
-
-        .font-small {
-            font-size: 15px;
-        }
-
-        .flexcenter {
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
         input[type=text],
@@ -58,15 +39,6 @@
             box-sizing: border-box;
         }
 
-        .imgcontainer {
-            text-align: center;
-        }
-
-        img.avatar {
-            width: 40%;
-            border-radius: 50%;
-        }
-
         .container {
             padding: 16px;
         }
@@ -76,25 +48,19 @@
             padding-top: 16px;
         }
 
-        table,
-        th,
-        td {
-            border-collapse: collapse;
+        .divTableHead {
+            border: 2px solid red !important
         }
 
-        th {
-            border-bottom: 2px solid black;
-        }
-
-        td {
-            padding: 10px;
-        }
-
-        tr:nth-child(even) {
+        .divTableRow:nth-child(even) {
             background-color: #D3D3D3;
         }
 
-        td {
+        .divTableCell {
+            padding: 10px;
+        }
+
+        .divTableCell {
             width: 16.66%;
             text-align: center;
         }
@@ -102,10 +68,6 @@
         div.content {
             margin: auto;
             width: 70vw;
-        }
-
-        table {
-            width: 100%;
         }
 
         ul.breadcrumb {
@@ -155,52 +117,52 @@
     <main>
         <ul class="breadcrumb">
             <li><a href="./dashboard.html">Home</a></li>
-            <li>View/Add courses</li>
+            <li>Book appointment</li>
         </ul>
         <br>
         <div class="content" style="margin: auto;">
-            <table>
-                <tr>
-                    <th>Course Name</th>
-                    <th>Course Id</th>
-                    <th>Action</th>
-                </tr>
-                <tr>
-                    <td>Jill</td>
-                    <td>ITC1070</td>
-                    <td><button class="deletebtn">Delete</button> | <button class="modifybtn">Modify</button></td>
-                </tr>
-                <tr>
-                    <td>Jill</td>
-                    <td>ITC1070</td>
-                    <td><button class="deletebtn">Delete</button> | <button class="modifybtn">Modify</button></td>
-                </tr>
-                <tr>
-                    <td>Jill</td>
-                    <td>ITC1070</td>
-                    <td><button class="deletebtn">Delete</button> | <button class="modifybtn">Modify</button></td>
-                </tr>
-                <tr>
-                    <td>Jill</td>
-                    <td>ITC1070</td>
-                    <td><button class="deletebtn">Delete</button> | <button class="modifybtn">Modify</button></td>
-                </tr>
-            </table>
+            <h3>Book appointment</h3>
             <hr>
-            <div>
-                <form action="/action_page.php" method="post">
-                    <div class="container">
-                        <h4>Add new course:</h4>
-                        <label for="coursename"><b>Course name</b></label>
-                        <input type="text" placeholder="Enter Course name" name="coursename" required>
-                        <label for="courseid"><b>Course ID</b></label>
-                        <input type="text" placeholder="Enter Course ID" name="courseid" required>
-                        <br>
-                        <button>Confirm</button>
-                        <button>Cancel</button>
-                    </div>
-                </form>
-            </div>
+            <form action="/action_page.php" method="post">
+                <div class="container">
+                    <label for="course">Choose a course:</label>
+                    <select name="course" id="course">
+                        <option value="IT">IT</option>
+                        <option value="HISTORY">HISTORY</option>
+                        <option value="BIOLOGY">BIOLOGY</option>
+                    </select>
+
+                    <br>
+                    <br>
+                    <label for="facilitator">Choose a facilitator:</label>
+                    <select name="facilitator" id="facilitator">
+                        <option value="KOURTIS">KOURTIS</option>
+                        <option value="TSIKALAS">TSIKALAS</option>
+                        <option value="VARDOULIAS">VARDOULIAS</option>
+                    </select>
+                    <br>
+                    <br>
+
+                    <form action="/action_page.php">
+                        <label for="day">Choose day:</label>
+                        <input type="day" id="day" name="day">
+                        <input type="submit">
+                    </form>
+                    <br>
+                    <br>
+
+                    <label for="timestart">Lesson starts at:</label>
+                    <input type="time" id="timestart" name="timestart" min="08:00" max="21:00" required>
+                    <br>
+                    <br>
+                    <label for="timeend">Lesson ends at:</label>
+                    <input type="time" id="timeend" name="timeend" min="08:00" max="21:00" required>
+                    <br>
+                    <br>
+                    <button>Confirm</button>
+                    <button>Cancel</button>
+                </div>
+            </form>
         </div>
     </main>
 
