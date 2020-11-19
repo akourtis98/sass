@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View appointments | SASS </title>
+    <title>View all appointments | SASS </title>
     <link rel="icon" type="image/png" href="favicon.ico" />
     <link rel="stylesheet" href="./styles/main.css">
 
@@ -13,20 +13,6 @@
         th,
         td {
             border-collapse: collapse;
-        }
-
-        .deletebtn {
-            transition: 0.2s ease-in-out;
-            cursor: pointer;
-            width: 60px;
-            border: 0px;
-            height: 25px;
-        }
-
-        .deletebtn:hover {
-            background-color: red;
-            color: white;
-            border: 1px solid red !important;
         }
 
         th {
@@ -62,7 +48,7 @@
         <nav>
             <ul>
                 <li><a href="./login.html">Log out</a></li>
-                <li><a href="./viewallappointments.html">View all appointments</a></li>
+                <li><a href="./viewappointments.html">View appointments</a></li>
                 <li><a href="./viewcourses.html">View Courses</a></li>
                 <li><a href="./viewworkers.html">View Workers</a></li>
                 <li><a href="./bookappointment.html">Book appointment</a></li>
@@ -71,8 +57,9 @@
     </header>
 
     <br>
+
     <main>
-        <h3>View appointments</h3>
+        <h3>View all appointments</h3>
         <hr>
         <br>
         <table>
@@ -82,7 +69,6 @@
                 <th>Student</th>
                 <th>Date</th>
                 <th>Time</th>
-                <th>Action</th>
             </tr>
             <tr>
                 <td>Jill</td>
@@ -90,7 +76,6 @@
                 <td>50</td>
                 <td>15/10</td>
                 <td>17:30 - 18:30</td>
-                <td><button class="deletebtn">Delete</button></td>
             </tr>
             <tr>
                 <td>Eve</td>
@@ -98,7 +83,6 @@
                 <td>94</td>
                 <td>15/10</td>
                 <td>17:30 - 18:30</td>
-                <td><button class="deletebtn">Delete</button></td>
             </tr>
             <tr>
                 <td>John</td>
@@ -106,7 +90,6 @@
                 <td>80</td>
                 <td>15/10</td>
                 <td>17:30 - 18:30</td>
-                <td><button class="deletebtn">Delete</button></td>
             </tr>
             <tr>
                 <td>Jill</td>
@@ -114,7 +97,6 @@
                 <td>50</td>
                 <td>15/10</td>
                 <td>17:30 - 18:30</td>
-                <td><button class="deletebtn">Delete</button></td>
             </tr>
             <tr>
                 <td>Jill</td>
@@ -122,7 +104,6 @@
                 <td>50</td>
                 <td>15/10</td>
                 <td>17:30 - 18:30</td>
-                <td><button class="deletebtn">Delete</button></td>
             </tr>
         </table>
     </main>
