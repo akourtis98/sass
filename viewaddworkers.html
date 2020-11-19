@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View/Add Workers | SASS </title>
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <style>
+        .deletebtn {
+            transition: 0.2s ease-in-out;
+            cursor: pointer;
+            width: 60px;
+            border: 0px;
+            height: 25px;
+        }
+
+        .deletebtn:hover {
+            background-color: red;
+            color: white;
+            border: 1px solid red !important;
+        }
+
+
+        .modifybtn {
+            transition: 0.2s ease-in-out;
+            cursor: pointer;
+            width: 60px;
+            border: 0px;
+            height: 25px;
+        }
+
+        .modifybtn:hover {
+            background-color: lightseagreen;
+            color: white;
+            border: 1px solid lightseagreen !important;
+        }
+
+        .font-small {
+            font-size: 15px;
+        }
+
+        .flexcenter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 300px;
+            padding: 5px 5px;
+            margin: 8px 0;
+            display: block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .imgcontainer {
+            text-align: center;
+        }
+
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+        }
+
+        th {
+            border-bottom: 2px solid black;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #D3D3D3;
+        }
+
+        td {
+            width: 16.66%;
+            text-align: center;
+        }
+
+        div.content {
+            margin: auto;
+            width: 70vw;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        ul.breadcrumb {
+            width: 70vw;
+            margin: auto;
+            padding: 10px 10px;
+            list-style: none;
+        }
+
+        ul.breadcrumb li {
+            display: inline;
+            font-size: 15px;
+        }
+
+        ul.breadcrumb li+li:before {
+            color: black;
+            content: "/\00a0";
+        }
+
+        ul.breadcrumb li a {
+            color: #0275d8;
+            text-decoration: none;
+        }
+
+        ul.breadcrumb li a:hover {
+            color: #01447e;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./signup.html">Sign up</a></li>
+                <li><a href="./viewappointments.html">View appointments</a></li>
+                <li><a href="./viewaddcourses.html">View/Add courses</a></li>
+                <li><a href="./viewaddworkers.html">View/Add workers</a></li>
+                <li><a href="./viewappointments.html">Book appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <main>
+        <ul class="breadcrumb">
+            <li><a href="./dashboard.html">Home</a></li>
+            <li>View/Add Workers</li>
+        </ul>
+        <br>
+        <div class="content" style="margin: auto;">
+            <table>
+                <tr>
+                    <th>Course Name</th>
+                    <th>Course Id</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>ITC1070</td>
+                    <td><button class="deletebtn">Delete</button> | <button class="modifybtn">Modify</button></td>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>ITC1070</td>
+                    <td><button class="deletebtn">Delete</button> | <button class="modifybtn">Modify</button></td>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>ITC1070</td>
+                    <td><button class="deletebtn">Delete</button> | <button class="modifybtn">Modify</button></td>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>ITC1070</td>
+                    <td><button class="deletebtn">Delete</button> | <button class="modifybtn">Modify</button></td>
+                </tr>
+            </table>
+            <div>
+                <form action="/action_page.php" method="post">
+                    <div class="container">
+                        <h4>Add new course:</h4>
+                        <label for="coursename"><b>Course name</b></label>
+                        <input type="text" placeholder="Enter Course name" name="coursename" required>
+                        <label for="courseid"><b>Course ID</b></label>
+                        <input type="text" placeholder="Enter Course ID" name="courseid" required>
+                        <br>
+                        <button>Confirm</button>
+                        <button>Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <br>
+    <footer>
+        <p class="font-small">© 2020 Copyright:
+            <a target="_blank"
+                href="https://www.acg.edu/undergraduate/academic-enrichment-programs/student-academic-support-services/">Deree
+                SASS</a></p>
+    </footer>
+</body>
+
+</html>
