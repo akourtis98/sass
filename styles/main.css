@@ -1,0 +1,62 @@
+form {
+  width: 750px;
+}
+
+.font-small {
+  font-size: 15px;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+html,
+body,
+nav,
+main,
+ul {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  min-height: 700px;
+}
+
+header {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+footer {
+  padding: 20px;
+  background-color: #f1f1f1;
+  bottom: 0px;
+}
+
+footer p {
+  text-align: center;
+}
+
+ul li {
+  display: inline;
+}
+
+ul li a {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  color: #4c4c4c;
+  transition: 0.2s ease-in-out;
+}
+
+ul li a:hover {
+  color: #000000;
+}
+
+.flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
