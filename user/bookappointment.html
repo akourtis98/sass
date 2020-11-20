@@ -46,12 +46,13 @@
 
     <main>
         <div class="content">
-            <h3>Book appointment</h3>
+            <h3>Book new appointment</h3>
             <hr>
             <form action="/action_page.php" method="post">
                 <div class="container">
                     <label for="course">Choose a course:</label>
                     <select name="course" id="course">
+                        <option selected="selected" disabled value="null">-</option>
                         <option value="IT">IT</option>
                         <option value="HISTORY">HISTORY</option>
                         <option value="BIOLOGY">BIOLOGY</option>
@@ -61,6 +62,7 @@
                     <br>
                     <label for="facilitator">Choose a facilitator:</label>
                     <select name="facilitator" id="facilitator">
+                        <option selected="selected" disabled value="null">-</option>
                         <option value="KOURTIS">KOURTIS</option>
                         <option value="TSIKALAS">TSIKALAS</option>
                         <option value="VARDOULIAS">VARDOULIAS</option>
