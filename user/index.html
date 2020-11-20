@@ -4,26 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up | SASS </title>
+    <title>Log in | SASS</title>
     <link rel="icon" type="image/png" href="favicon.ico" />
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css">
 
     <style>
-        #loginbtn {
-            float: left;
-        }
-
-        form {
-            width: 750px;
-        }
-
         .font-small {
             font-size: 15px;
         }
 
+        .flexcenter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         input[type=text],
-        input[type=number],
-        input[type=email],
         input[type=password] {
             width: 100%;
             padding: 12px 20px;
@@ -65,6 +61,10 @@
             padding-top: 16px;
         }
 
+        #registerbtn {
+            float: left;
+        }
+
         #forgotpasswordbtn {
             float: right;
         }
@@ -75,41 +75,16 @@
     <header>
         <nav>
             <ul class="flexcenter">
-                <li><a href="./login.html">Login</a></li>
-                <li><a href="./signup.html">Sign up</a></li>
+                <li><a href="../auth/login.html">Log out</a></li>
+                <li><a href="./bookappointment.html">Book new appointment</a></li>
+                <li><a href="./viewallappointments.html">view my appointments</a></li>
             </ul>
         </nav>
     </header>
 
     <br>
     <main class="flexcenter">
-        <form action="/signup.php" method="post">
-            <div class="imgcontainer">
-                <img src="user.png" style="width: 150px;" alt="Avatar" class="avatar">
-            </div>
-
-            <div class="container">
-                <h3>Welcome to SASS</h3>
-                <h4>Please sign up so you can access our services</h4>
-
-                <label for="email"><b>Email</b></label>
-                <input type="email" placeholder="Enter Email" name="email" required>
-
-                <label for="id"><b>Student ID</b></label>
-                <input type="number" placeholder="Enter student ID" name="id" required>
-
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                <label for="password2"><b>Repeat Password</b></label>
-                <input type="password" placeholder="Repeat Password" name="password2" required>
-
-                <button type="submit">Sign up</button>
-            </div>
-            <div class="container">
-                <span id="loginbtn" style="display: inline;"><a href="./login.html">Log in</a>, instead?</span>
-            </div>
-        </form>
+        <h3>user</h3>
     </main>
 
     <br>

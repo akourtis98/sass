@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View all appointments | SASS </title>
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <style>
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+        }
+
+        th {
+            border-bottom: 2px solid black;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #D3D3D3;
+        }
+
+        td {
+            width: 16.66%;
+            text-align: center;
+        }
+
+        main {
+            width: 70vw;
+            margin: auto;
+        }
+
+        table {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="flexcenter">
+                <li><a href="../auth/login.html">Log out</a></li>
+                <li><a href="./viewallappointments.html">View my appointments</a></li>
+                <li><a href="./viewschedule.html">View my schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+
+    <main>
+        <h3>View all appointments</h3>
+        <hr>
+        <br>
+        <table>
+            <tr>
+                <th>Facilitator</th>
+                <th>Course</th>
+                <th>Student</th>
+                <th>Date</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>ITC1070</td>
+                <td>50</td>
+                <td>15/10</td>
+                <td>17:30 - 18:30</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>ITC1070</td>
+                <td>94</td>
+                <td>15/10</td>
+                <td>17:30 - 18:30</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>ITC1070</td>
+                <td>80</td>
+                <td>15/10</td>
+                <td>17:30 - 18:30</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>ITC1070</td>
+                <td>50</td>
+                <td>15/10</td>
+                <td>17:30 - 18:30</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>ITC1070</td>
+                <td>50</td>
+                <td>15/10</td>
+                <td>17:30 - 18:30</td>
+            </tr>
+        </table>
+    </main>
+
+    <br>
+    <footer>
+        <p class="font-small">© 2020 Copyright:
+            <a target="_blank"
+                href="https://www.acg.edu/undergraduate/academic-enrichment-programs/student-academic-support-services/">Deree
+                SASS</a></p>
+    </footer>
+</body>
+
+</html>

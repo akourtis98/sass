@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Courses | SASS </title>
+    <title>View/Add Workers | SASS </title>
     <link rel="icon" type="image/png" href="favicon.ico" />
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css">
 
     <style>
         .deletebtn {
@@ -14,7 +14,6 @@
             cursor: pointer;
             width: 60px;
             border: 0px;
-            height: 25px;
         }
 
         .deletebtn:hover {
@@ -23,13 +22,15 @@
             border: 1px solid red !important;
         }
 
+        table button {
+            height: 30px;
+        }
 
         .modifybtn {
             transition: 0.2s ease-in-out;
             cursor: pointer;
-            width: 60px;
             border: 0px;
-            height: 25px;
+            width: 150px;
         }
 
         .modifybtn:hover {
@@ -95,15 +96,8 @@
         }
 
         td {
-            width: 16.66%;
             text-align: center;
         }
-
-        div.content {
-            margin: auto;
-            width: 70vw;
-        }
-
 
         main {
             width: 70vw;
@@ -119,64 +113,86 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="./login.html">Log out</a></li>
-                <li><a href="./viewallappointments.html">View all appointments</a></li>
-                <li><a href="./viewcourses.html">View Courses</a></li>
-                <li><a href="./viewworkers.html">View Workers</a></li>
-                <li><a href="./bookappointment.html">Book appointment</a></li>
+            <ul class="flexcenter">
+                <li><a href="../auth/login.html">Log out</a></li>
+                <li><a href="./viewaddcourses.html">Manage courses</a></li>
+                <li><a href="./viewaddworkers.html">Manage workers</a></li>
             </ul>
         </nav>
     </header>
 
     <br>
     <main>
-        <h3>View Courses</h3>
+        <h3>View/Add Workers</h3>
         <hr>
         <br>
         <div class="content" style="margin: auto;">
             <table>
                 <tr>
-                    <th>Course Name</th>
-                    <th>Course Id</th>
+                    <th>Username</th>
+                    <th>Id</th>
+                    <th>Major</th>
                     <th>Action</th>
                 </tr>
                 <tr>
                     <td>Jill</td>
                     <td>ITC1070</td>
-                    <td><button class="deletebtn">Delete</button> | <button class="modifybtn">Modify</button></td>
+                    <td>IT</td>
+                    <td>
+                        <div>
+                            <button class="modifybtn">View/Adjust schedule</button>
+                            <button class="modifybtn">View/Adjust courses</button>
+                            <button class="deletebtn">Delete</button>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td>Jill</td>
                     <td>ITC1070</td>
-                    <td><button class="deletebtn">Delete</button> | <button class="modifybtn">Modify</button></td>
+                    <td>IT</td>
+                    <td>
+                        <div>
+                            <button class="modifybtn">View/Adjust schedule</button>
+                            <button class="modifybtn">View/Adjust courses</button>
+                            <button class="deletebtn">Delete</button>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td>Jill</td>
                     <td>ITC1070</td>
-                    <td><button class="deletebtn">Delete</button> | <button class="modifybtn">Modify</button></td>
-                </tr>
-                <tr>
-                    <td>Jill</td>
-                    <td>ITC1070</td>
-                    <td><button class="deletebtn">Delete</button> | <button class="modifybtn">Modify</button></td>
+                    <td>IT</td>
+                    <td>
+                        <div>
+                            <button class="modifybtn">View/Adjust schedule</button>
+                            <button class="modifybtn">View/Adjust courses</button>
+                            <button class="deletebtn">Delete</button>
+                        </div>
+                    </td>
                 </tr>
             </table>
             <hr>
-            <div>
-                <form action="/action_page.php" method="post">
-                    <div class="container">
-                        <h3>Add new course:</h3>
-                        <label for="coursename"><b>Course name</b></label>
-                        <input type="text" placeholder="Enter Course name" name="coursename" required>
-                        <label for="courseid"><b>Course ID</b></label>
-                        <input type="text" placeholder="Enter Course ID" name="courseid" required>
-                        <br>
-                        <button>Confirm</button>
-                        <button>Cancel</button>
-                    </div>
-                </form>
-            </div>
+            <form action="/action_page.php" method="post">
+                <div class="container">
+                    <h3>Add new worker</h3>
+                    <label for="username"><b>Username:</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" required>
+                    <br>
+
+                    <label for="role"><b>Role:</b></label>
+                    <br>
+                    <input type="radio" id="male" name="role" value="male">
+                    <label for="male">Learning</label><br>
+                    <input type="radio" id="female" name="role" value="female">
+                    <label for="female">Facilitator</label><br>
+                    <input type="radio" id="other" name="role" value="other">
+                    <label for="other">Secretariat</label>
+                    <br>
+                    <br>
+                    <button>Confirm</button>
+                    <button>Cancel</button>
+                </div>
+            </form>
         </div>
     </main>
 

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book appointment | SASS </title>
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <style>
+        input[type=text],
+        input[type=password] {
+            width: 300px;
+            padding: 5px 5px;
+            margin: 8px 0;
+            display: block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+
+        div.content {
+            margin: auto;
+            width: 70vw;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="flexcenter">
+                <li><a href="../auth/login.html">Log out</a></li>
+                <li><a href="./viewappointments.html">View all appointments</a></li>
+                <!-- <li><a href="./viewcourses.html">View Courses</a></li> -->
+                <li><a href="./viewworkers.html">View Workers</a></li>
+                <li><a href="./bookappointment.html">Book appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+
+    <main>
+        <div class="content">
+            <h3>Book appointment for a student</h3>
+            <hr>
+            <form action="/action_page.php" method="post">
+                <div class="container">
+                    <label for="course">Choose a student:</label>
+                    <select name="student" id="student">
+                        <option selected="selected" disabled value="null">-</option>
+                        <option value="ALEX">ALEX</option>
+                        <option value="KYLE">KYLE</option>
+                        <option value="ANDREW">ANDREW</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="course">Choose a course:</label>
+                    <select name="course" id="course">
+                        <option selected="selected" disabled value="null">-</option>
+                        <option value="IT">IT</option>
+                        <option value="HISTORY">HISTORY</option>
+                        <option value="BIOLOGY">BIOLOGY</option>
+                    </select>
+
+                    <br>
+                    <br>
+                    <label for="facilitator">Choose a facilitator:</label>
+                    <select name="facilitator" id="facilitator">
+                        <option selected="selected" disabled value="null">-</option>
+                        <option value="KOURTIS">KOURTIS</option>
+                        <option value="TSIKALAS">TSIKALAS</option>
+                        <option value="VARDOULIAS">VARDOULIAS</option>
+                    </select>
+                    <br>
+                    <br>
+
+                    <form action="/action_page.php">
+                        <label for="day">Choose day:</label>
+                        <input type="date" id="day" name="day">
+                    </form>
+                    <br>
+                    <br>
+
+                    <label for="timestart">Lesson starts at:</label>
+                    <input type="time" id="timestart" name="timestart" min="08:00" max="21:00" required>
+                    <br>
+                    <br>
+                    <label for="timeend">Lesson ends at:</label>
+                    <input type="time" id="timeend" name="timeend" min="08:00" max="21:00" required>
+                    <br>
+                    <br>
+                    <button>Confirm</button>
+                    <button>Cancel</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <br>
+    <footer>
+        <p class="font-small">© 2020 Copyright:
+            <a target="_blank"
+                href="https://www.acg.edu/undergraduate/academic-enrichment-programs/student-academic-support-services/">Deree
+                SASS</a></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up | SASS </title>
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <style>
+        #loginbtn {
+            float: left;
+        }
+
+        form {
+            width: 750px;
+        }
+
+        .font-small {
+            font-size: 15px;
+        }
+
+        input[type=text],
+        input[type=number],
+        input[type=email],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .imgcontainer {
+            text-align: center;
+        }
+
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+        #forgotpasswordbtn {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="flexcenter">
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./signup.html">Sign up</a></li>
+                <li><a href="./signup.html">log in as admin</a></li>
+                <li><a href="./signup.html">log in as facilitator</a></li>
+                <li><a href="./signup.html">log in as moderator</a></li>
+                <li><a href="./signup.html">log in as secretariat</a></li>
+                <li><a href="./signup.html">log in as user</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <main class="flexcenter">
+        <form action="/signup.php" method="post">
+            <div class="imgcontainer">
+                <img src="../user.png" style="width: 150px;" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <h3>Welcome to SASS</h3>
+                <h4>Please sign up so you can access our services</h4>
+
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" required>
+
+                <label for="id"><b>Student ID</b></label>
+                <input type="number" placeholder="Enter student ID" name="id" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="password2"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="password2" required>
+
+                <button type="submit">Sign up</button>
+            </div>
+            <div class="container">
+                <span id="loginbtn" style="display: inline;"><a href="./login.html">Log in</a>, instead?</span>
+            </div>
+        </form>
+    </main>
+
+    <br>
+    <footer>
+        <p class="font-small">© 2020 Copyright:
+            <a target="_blank"
+                href="https://www.acg.edu/undergraduate/academic-enrichment-programs/student-academic-support-services/">Deree
+                SASS</a></p>
+    </footer>
+</body>
+
+</html>
