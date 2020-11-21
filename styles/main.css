@@ -1,4 +1,5 @@
-form {
+#login form,
+#signup form {
   width: 750px;
 }
 
@@ -371,4 +372,90 @@ table {
 
 #login #forgotpasswordbtn {
   float: right;
+}
+
+#viewworkers button a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+#viewschedule table {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  border-collapse: collapse;
+}
+
+/* Zebra striping */
+#viewschedule tr:nth-of-type(odd) {
+  background: #eee;
+}
+
+#viewschedule th {
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+}
+
+#viewschedule td,
+#viewschedule th {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+  font-size: 18px;
+}
+
+#availableslot {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  #viewschedule table {
+    width: 100%;
+  }
+
+  #viewschedule table,
+  #viewschedule thead,
+  #viewschedule tbody,
+  #viewschedule th,
+  #viewschedule td,
+  #viewschedule tr {
+    display: block;
+  }
+
+  #viewschedule thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  #viewschedule tr {
+    border: 1px solid #ccc;
+  }
+
+  #viewschedule td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  #viewschedule td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    content: attr(data-column);
+
+    color: #000;
+    font-weight: bold;
+  }
+}
+
+.mutedtext {
+  color: #999999;
 }
