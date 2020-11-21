@@ -387,7 +387,6 @@ table {
   border-collapse: collapse;
 }
 
-/* Zebra striping */
 #viewschedule tr:nth-of-type(odd) {
   background: #eee;
 }
@@ -406,7 +405,14 @@ table {
   font-size: 18px;
 }
 
+#viewschedule {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+}
+
 #availableslot {
+  background-color: #2ab7ca;
   cursor: pointer;
 }
 
